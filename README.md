@@ -1,21 +1,14 @@
 # Editable mushroom identifier
 
 Final project for the Building AI course
-
-## Summary
-
-Imagine you are in the forest and encounter these two mushrooms, which is editable?
 <br />
 <img src="https://github.com/annatao/Building-AI/blob/main/IMG_4704.jpg" width="300">
 <img src="https://github.com/annatao/Building-AI/blob/main/IMG_4706.jpg" width="300">
 <br />
 
-This project is to create an AI that can identify whether a mushroom is edible. It can be served as a tool to help prevent people from eating poisonous mushrooms.  
+## Summary
 
-The input to this AI can be photos, locations and properties of a mushroom.The output will be either yes or no. Editable here means not deadly and not poisonous. Particular allergies are not considered. 
-
-The goal of the project is to help people to enjoy the fun of picking mushrooms in nature while avoiding potential harm to health. This project can be delivered as a mobile app to be used conveniently in the forest.  
-
+This project is to create an AI that can identify whether a mushroom is edible. It is to help people to enjoy the fun of picking mushrooms in nature while avoid eating poisonous ones. 
 
 ## Background
 
