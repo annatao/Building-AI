@@ -7,7 +7,7 @@ Final project for the Building AI course
 Imagine you are in the forest and encounter these two mushrooms, which is editable?
 <br />
 <img src="https://github.com/annatao/Building-AI/blob/main/IMG_4704.jpg" width="300">
-<img src="https://github.com/annatao/Building-AI/blob/main/IMG_4706.JPG" width="300">
+<img src="https://github.com/annatao/Building-AI/blob/main/IMG_4706.jpg" width="300">
 <br />
 
 This project is to create an AI that can identify whether a mushroom is edible. It can be served as a tool to help prevent people from eating poisonous mushrooms.  
@@ -36,7 +36,7 @@ Please note that sufficient amounts of input is needed for identification. A blu
 
 Example 1
 <br />
-<img src="https://github.com/annatao/Building-AI/blob/main/IMG_4712(2).jpg" width="300">
+<img src="https://github.com/annatao/Building-AI/blob/main/IMG_4712%20(2).jpg" width="300">
 <br />
 * overall appearance is well-recognised
 * checking on cap's bottom is beneficial for identification
