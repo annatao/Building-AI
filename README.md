@@ -1,76 +1,68 @@
-
-# Project Title
+# Editable mushroom identifier
 
 Final project for the Building AI course
 
 ## Summary
 
-Describe briefly in 2-3 sentences what your project is about. About 250 characters is a nice length! 
+Imagine you are in the forest and encounter these two mushrooms, which is editable?
+<img src="https://github.com/annatao/Building-AI/blob/main/IMG_4704.jpg" width="300">
+<img src="https://github.com/annatao/Building-AI/blob/main/IMG_4707.jpg" width="300">
+
+This project is to create an AI that can identify whether a mushroom is edible. It can be served as a tool to help prevent people from eating poisonous mushrooms.  
+
+The input to this AI can be photos, locations and properties of a mushroom.The output will be either yes or no. Editable here means not deadly and not poisonous. Particular allergies are not considered. 
+
+The goal of the project is to help people to enjoy the fun of picking mushrooms in nature while avoiding potential harm to health. This project can be delivered as a mobile app to be used conveniently in the forest.  
 
 
 ## Background
 
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
+The idea is trying to solve:
+* people died because of eating poisonous mushroom by mistake
+* mushrooms look similar, and it is easy to mistake one from another
+* knowledge about mushroom is very comprehensive
 
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+It is not uncommon that people die because of eating poisonous mushrooms by mistake, especially during fall, which is the mushroom harvesting season.
+I personally like picking mushrooms and think that it is a good way to interact with nature. It will be beneficial, or even life-saving, to have an AI helping to identify edible mushrooms.
 
 
 ## How is it used?
 
-Describe the process of using the solution. In what kind situations is the solution needed (environment, time, etc.)? Who are the users, what kinds of needs should be taken into account?
+To use the solution, photos, location or other properties of mushrooms has to be input. Image processing can be used to identify mushrooms from photos. Location can be used to narrow the range of species of mushroom to those available in that region. Other properties can include different appearance factors, such as whether the mushroom contains gills or pores, color and width of cap. 
 
-Images will make your README look nice!
-Once you upload an image to your repository, you can link link to it like this (replace the URL with file path, if you've uploaded an image to Github.)
-![Cat](https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg)
+Please note that sufficient amounts of input is needed for identification. A blurred image or just a broad location will not work. The solution should be able to instruct users about how to provide enough input, the following are examples. 
 
-If you need to resize images, you have to use an HTML tag, like this:
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Sleeping_cat_on_her_back.jpg" width="300">
+Example 1
+<img src="https://github.com/annatao/Building-AI/blob/main/IMG_4712.jpg" width="300">
+* overall appearance is well-recognised
+* checking on cap's bottom is beneficial for identification
+* instruction from solution can be "take a closer photo on the cap's bottom"
 
-This is how you create code examples:
-```
-def main():
-   countries = ['Denmark', 'Finland', 'Iceland', 'Norway', 'Sweden']
-   pop = [5615000, 5439000, 324000, 5080000, 9609000]   # not actually needed in this exercise...
-   fishers = [1891, 2652, 3800, 11611, 1757]
+Example 2
+<img src="https://github.com/annatao/Building-AI/blob/main/IMG_4710.jpg" width="300">
+* gills are well-recognized
+* checking on mushroom's width is beneficial for identification
+* instruction from solution can be "enter estimated width of mushroom"
 
-   totPop = sum(pop)
-   totFish = sum(fishers)
-
-   # write your solution here
-
-   for i in range(len(countries)):
-      print("%s %.2f%%" % (countries[i], 100.0))    # current just prints 100%
-
-main()
-```
-
+Users can be any individual that is interested in picking mushrooms and with a smartphone that can install mobile apps. They should be able to take multiple photos of the mushroom, to know where they are situated, and to be able to follow the solution's instruction to provide enough input for identification.
 
 ## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+Data can be collected via website with comprehensive mushroom knowledge such as
+[MushroomExpert](https://www.mushroomexpert.com/)
+
+k-nearest neighbor can be used as a brief identification, while deep learning can be used for more precise identification.
 
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
+This project does not involve the responsibility of eating the mushrooms identified. It should be considered as a guide to confirm mushrooms, but not a golden rule for consumption.
 
 ## What next?
 
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
+This project can grow to a mushroom species identifier, with comprehensive knowledge from fungi experts.
 
 
 ## Acknowledgments
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+* https://www.mushroomexpert.com/
+* recent mushroom picking experience with friends
